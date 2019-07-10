@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import {APP_ROUTING} from './app.routes'
 
 //Servicios
+import {HeroesServices} from "./servicios/heroes.service";
 
 
 import { AppComponent } from './app.component';
@@ -32,7 +33,7 @@ import { HomeComponent } from './components/home/home.component';
     APP_ROUTING
   ],
   providers: [
-
+    HeroesServices
   ],
   bootstrap: [AppComponent]
 })
